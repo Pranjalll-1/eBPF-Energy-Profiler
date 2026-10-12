@@ -106,27 +106,3 @@ try:
 except KeyboardInterrupt:
     print("\nStopping tracker.")
 
-
-# ---------------------------------------------------------------------------
-# INTEGRATION GUIDE FOR MODULE 2 
-# ---------------------------------------------------------------------------
-# 
-# 1. DATA INGESTION: This script constantly overwrites "ebpf_metrics.json" 
-#    every 1 second. In your Java application, set up a ScheduledExecutorService 
-#    or a background thread to read this file at a similar 1-second interval.
-#    Use a library like Jackson or Gson to parse the JSON into a Map<String, Double>.
-# 
-# 2. RAPL SYNC: At the exact same interval you read the JSON file, read the 
-#    hardware energy counter directly from the Linux filesystem:
-#    File path: /sys/class/powercap/intel-rapl:0/energy_uj
-# 
-# 3. ATTRIBUTION MATH (MODULE 3 PREP): 
-#    - Sum all the execution times (values) from the JSON to get 'Total_Active_Time'.
-#    - Calculate the difference in the RAPL energy counter since the last second to get 'Total_Joules'.
-#    - For each active PID: (PID_Time / Total_Active_Time) * Total_Joules = PID_Energy_Footprint.
-# 
-# 4. CONCURRENCY WARNING: Since this Python script writes to the file while 
-#    your Java daemon reads it, you might occasionally hit a file lock or read 
-#    a partially written file. Wrap your Java FileReader in a try-catch block 
-#    and silently skip/retry on the next tick if an IOException occurs.
-# ---------------------------------------------------------------------------

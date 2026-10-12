@@ -1,0 +1,29 @@
+Maven/Spring Boot compiled output
+
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+Dynamically generated metrics file (do not version control live data)
+
+ebpf_metrics.json
+
+VS Code specific settings
+
+.vscode/
+*.code-workspace
+
+Python specific files
+
+pycache/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+OS specific files
+
+.DS_Store
+Thumbs.db
