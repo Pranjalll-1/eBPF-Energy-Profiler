@@ -1,5 +1,6 @@
 package com.greencloud.profiler.rapl;
 
+import com.greencloud.profiler.attribution.AttributionEngineService;
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,11 @@ public class RaplHardwareReaderService {
     private static final Path SYSFS_MAX_RANGE_UJ = Paths.get("/sys/class/powercap/intel-rapl:0/max_energy_range_uj");
 
     private static final long FALLBACK_HARDWARE_LIMIT_UJ = 262_143_328_850L;
+    private final AttributionEngineService attributionEngineService;
+
+    public RaplHardwareReaderService(AttributionEngineService attributionEngineService) {
+        this.attributionEngineService = attributionEngineService;
+    }
 
     private boolean isSimulationMode = false;
     private long hardwareWrapLimitUj = FALLBACK_HARDWARE_LIMIT_UJ;
@@ -108,6 +114,7 @@ public class RaplHardwareReaderService {
                     String.format("%.4f", deltaJoules),
                     String.format("%.2f", intervalWatts),
                     String.format("%.3f", elapsedSeconds));
+            attributionEngineService.attribute(latestSample);
 
         } catch (AccessDeniedException e) {
             handleError("Root privileges required to read RAPL sysfs: " + SYSFS_ENERGY_UJ);
@@ -143,6 +150,7 @@ public class RaplHardwareReaderService {
                 String.format("%.4f", mockJoules),
                 String.format("%.2f", mockWatts),
                 String.format("%.3f", elapsedSeconds));
+        attributionEngineService.attribute(latestSample);
     }
 
     private long readSysfsUj(Path sysfsPath) throws IOException {

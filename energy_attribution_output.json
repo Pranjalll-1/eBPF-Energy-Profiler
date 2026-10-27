@@ -1,0 +1,153 @@
+{
+  "windowEndUtc" : "2026-10-27T06:00:05.775444471Z",
+  "windowSeconds" : 1.0,
+  "packageEnergyJoules" : 24.232311,
+  "idleEnergyJoules" : 4.999985,
+  "dynamicEnergyJoules" : 19.232326,
+  "processes" : [ {
+    "pid" : 825,
+    "cpuTimeMs" : 3.893,
+    "sharePercent" : 30.726,
+    "energyJoules" : 5.909349
+  }, {
+    "pid" : 1127,
+    "cpuTimeMs" : 3.3,
+    "sharePercent" : 26.046,
+    "energyJoules" : 5.009209
+  }, {
+    "pid" : 244,
+    "cpuTimeMs" : 1.193,
+    "sharePercent" : 9.416,
+    "energyJoules" : 1.810905
+  }, {
+    "pid" : 142,
+    "cpuTimeMs" : 1.122,
+    "sharePercent" : 8.856,
+    "energyJoules" : 1.703131
+  }, {
+    "pid" : 1094,
+    "cpuTimeMs" : 0.672,
+    "sharePercent" : 5.304,
+    "energyJoules" : 1.020057
+  }, {
+    "pid" : 185,
+    "cpuTimeMs" : 0.454,
+    "sharePercent" : 3.583,
+    "energyJoules" : 0.689146
+  }, {
+    "pid" : 236,
+    "cpuTimeMs" : 0.365,
+    "sharePercent" : 2.881,
+    "energyJoules" : 0.554049
+  }, {
+    "pid" : 1091,
+    "cpuTimeMs" : 0.252,
+    "sharePercent" : 1.989,
+    "energyJoules" : 0.382521
+  }, {
+    "pid" : 1083,
+    "cpuTimeMs" : 0.201,
+    "sharePercent" : 1.586,
+    "energyJoules" : 0.305106
+  }, {
+    "pid" : 1073,
+    "cpuTimeMs" : 0.19,
+    "sharePercent" : 1.5,
+    "energyJoules" : 0.288409
+  }, {
+    "pid" : 661,
+    "cpuTimeMs" : 0.169,
+    "sharePercent" : 1.334,
+    "energyJoules" : 0.256532
+  }, {
+    "pid" : 818,
+    "cpuTimeMs" : 0.149,
+    "sharePercent" : 1.176,
+    "energyJoules" : 0.226173
+  }, {
+    "pid" : 1089,
+    "cpuTimeMs" : 0.119,
+    "sharePercent" : 0.939,
+    "energyJoules" : 0.180635
+  }, {
+    "pid" : 1084,
+    "cpuTimeMs" : 0.106,
+    "sharePercent" : 0.837,
+    "energyJoules" : 0.160902
+  }, {
+    "pid" : 15,
+    "cpuTimeMs" : 0.104,
+    "sharePercent" : 0.821,
+    "energyJoules" : 0.157866
+  }, {
+    "pid" : 245,
+    "cpuTimeMs" : 0.081,
+    "sharePercent" : 0.639,
+    "energyJoules" : 0.122953
+  }, {
+    "pid" : 843,
+    "cpuTimeMs" : 0.068,
+    "sharePercent" : 0.537,
+    "energyJoules" : 0.10322
+  }, {
+    "pid" : 1088,
+    "cpuTimeMs" : 0.032,
+    "sharePercent" : 0.253,
+    "energyJoules" : 0.048574
+  }, {
+    "pid" : 1090,
+    "cpuTimeMs" : 0.029,
+    "sharePercent" : 0.229,
+    "energyJoules" : 0.04402
+  }, {
+    "pid" : 183,
+    "cpuTimeMs" : 0.026,
+    "sharePercent" : 0.205,
+    "energyJoules" : 0.039466
+  }, {
+    "pid" : 219,
+    "cpuTimeMs" : 0.023,
+    "sharePercent" : 0.182,
+    "energyJoules" : 0.034913
+  }, {
+    "pid" : 161,
+    "cpuTimeMs" : 0.022,
+    "sharePercent" : 0.174,
+    "energyJoules" : 0.033395
+  }, {
+    "pid" : 172,
+    "cpuTimeMs" : 0.021,
+    "sharePercent" : 0.166,
+    "energyJoules" : 0.031877
+  }, {
+    "pid" : 1029,
+    "cpuTimeMs" : 0.019,
+    "sharePercent" : 0.15,
+    "energyJoules" : 0.028841
+  }, {
+    "pid" : 139,
+    "cpuTimeMs" : 0.019,
+    "sharePercent" : 0.15,
+    "energyJoules" : 0.028841
+  }, {
+    "pid" : 177,
+    "cpuTimeMs" : 0.018,
+    "sharePercent" : 0.142,
+    "energyJoules" : 0.027323
+  }, {
+    "pid" : 193,
+    "cpuTimeMs" : 0.01,
+    "sharePercent" : 0.079,
+    "energyJoules" : 0.015179
+  }, {
+    "pid" : 184,
+    "cpuTimeMs" : 0.008,
+    "sharePercent" : 0.063,
+    "energyJoules" : 0.012144
+  }, {
+    "pid" : 14,
+    "cpuTimeMs" : 0.005,
+    "sharePercent" : 0.039,
+    "energyJoules" : 0.00759
+  } ]
+}
